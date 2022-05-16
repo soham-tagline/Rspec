@@ -8,9 +8,6 @@ Style/Documentation:
 Metrics/MethodLength:
   Max: 30
 
-Metrics/BlockLength:
-  Max: 120
-
 Metrics/AbcSize:
   Max: 60
 
@@ -31,3 +28,12 @@ Metrics/ParameterLists:
 
 Metrics/PerceivedComplexity:
   Max: 17
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+    - 'components/**/spec/**/*.rb'
+    - 'config/routes.rb'
+    - 'app/lib/app_config.rb'
